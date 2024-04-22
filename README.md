@@ -14,3 +14,25 @@ Website will have users who can buy an array or products in different quantities
 
 * Added Spring boot security to our app
 * Temporarily put an endpoint for users to login and receive a JWT
+
+
+What the `bookblend-backend/src/main/resources/application.properties` should look like now but with the credentials to our database which I emailed you guys:
+
+```
+spring.application.name=bookblend-backend
+management.endpoints.jmx.exposure.exclude=*
+
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=XXXXX
+spring.datasource.username=XXXXX
+spring.datasource.password=XXXXX
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# Encryption configuration
+encryption.salt.rounds=10
+
+# JWT configuration
+jwt.algorithm.key=SuperSecureSecretKey
+jwt.issuer=eCommerce
+jwt.expiryInSeconds=604800
+```
