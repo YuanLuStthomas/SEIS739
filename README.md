@@ -33,6 +33,12 @@ jwt.issuer=eCommerce
 jwt.expiryInSeconds=604800
 ```
 
+## Run Application
+
+To run our application, `cd` into `bookblend-backend`, and run the following command:
+
+`./mvnw spring-boot:run`
+
 ## Connecting to Our Database via CLI
 
 ### Setup CLI
