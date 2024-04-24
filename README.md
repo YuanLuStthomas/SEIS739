@@ -12,7 +12,7 @@ Website will have users who can buy an array or products in different quantities
 
 ## `application.properties`
 
-What the `bookblend-backend/src/main/resources/application.properties` should look like now but with the credentials to our database which I emailed you guys:
+**IMPORTANT**: Replace the following contents in your local `bookblend-backend/src/main/resources/application.properties` BUT with the credentials to our database which I emailed you guys:
 
 ```
 spring.application.name=bookblend-backend
