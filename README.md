@@ -55,6 +55,8 @@ You can connect to our database in your terminal with the following command:
 mysql --user XXXXX --password=XXXXX --host XXXXX --port 14068 defaultdb
 ```
 
+[Here](https://aiven.io/docs/products/mysql/howto/connect-from-cli) are the docs if you're having trouble.
+
 ### Setup Postgres Database
 
 We have a script in the root of our source code, `insertDummyDataForBookBlend.sql`, that once you're connected to the database via cli, you can run the script on your local maching with the following command:
