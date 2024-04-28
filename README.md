@@ -79,5 +79,7 @@ If you successfully conncected to the DB and run the script from your local mach
 
 * Added Spring boot security to our app
 * Temporarily put an endpoint for users to login and receive a JWT
+* Have endpoint for all of the products available
+* Have endpoint for all of the orders for the  user signed in
 
 * Added initial code , test controller, exposed the mappings actuator functionality inside spring boot following this tutorial: https://www.youtube.com/watch?v=S7nVCB1Fqvk&list=PLtBt-olBU9cTm-5SdTy3mjaSEnHglK-Mz 

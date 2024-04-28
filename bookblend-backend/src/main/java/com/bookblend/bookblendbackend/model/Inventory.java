@@ -1,5 +1,7 @@
 package com.bookblend.bookblendbackend.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,6 +25,7 @@ public class Inventory {
     private Long id;
 
     /** The book this inventory is of. */
+    @JsonIgnore
     @OneToOne(optional = false, orphanRemoval = true)
     @JoinColumn(name = "book_id", nullable = false, unique = true)
     private Book book;
