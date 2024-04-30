@@ -1,7 +1,10 @@
-<p>book-list works!</p>
+<h1>EXPLORE</h1>
 
-<div *ngFor="let book of books">
-    <p>{{ book.id }}</p>
-    <p>{{ book.name }}</p>
-
+<div class="explore-container">
+  <div class="photo-grid">
+    <div class="book-container" *ngFor="let book of books" (click)="navigateToArtist(book.id)">
+      <h2>{{ book.name }}</h2>
+      <img [src]="book.bookImg" alt="Artist Image" />
+    </div>
+  </div>
 </div>

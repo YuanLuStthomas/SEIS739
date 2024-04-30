@@ -13,16 +13,19 @@
         <h2>{{ books[0].name }}</h2>
         <h2>{{ books[0].author }}</h2>
         <img [src]="books[0].bookImg" alt="Book Art"/>
+        <a [routerLink]="['/book', books[0].id]"><button class="explore-button" >Explore</button></a>
     </div>
     <div class="book">
         <h2>{{ books[1].name }}</h2>
         <h2>{{ books[1].author }}</h2>
         <img [src]="books[1].bookImg" alt="Book Art"/>
+        <a [routerLink]="['/book', books[1].id]"><button class="explore-button" >Explore</button></a>
     </div>
     <div class="book">
         <h2>{{ books[2].name }}</h2>
         <h2>{{ books[2].author }}</h2>
         <img [src]="books[2].bookImg" alt="Book Art"/>
+        <a [routerLink]="['/book', books[2].id]"><button class="explore-button" >Explore</button></a>
     </div>
 </div>
 

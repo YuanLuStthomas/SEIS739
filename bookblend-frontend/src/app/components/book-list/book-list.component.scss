@@ -1,0 +1,43 @@
+// header
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+//explore container 
+
+.explore-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.photo-grid {
+  column-count: 3;
+  column-gap: 10px;
+}
+
+.photo-grid div {
+  break-inside: avoid;
+  margin-bottom: 10px;
+}
+
+.photo-grid img {
+  width: 100%;
+  cursor: pointer;
+}
+
+// book container
+.book-container {
+    margin: 3%;
+}
+
+.book-container h2 {
+    text-align: center;
+}

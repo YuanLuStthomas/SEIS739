@@ -1,0 +1,22 @@
+.footer {
+    background-color: lightpink;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+.footer-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-list li {
+    margin: 0 10px;
+}
+
+.footer-list li::after {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: gray;
+}

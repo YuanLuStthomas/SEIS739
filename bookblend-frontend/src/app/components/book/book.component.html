@@ -1,0 +1,12 @@
+
+<h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></h1>
+
+<!-- <h2 class="">book ID: {{ bookId }}</h2> -->
+
+<div class="main" *ngIf="book$ | async as book">
+    <img [src]="book.bookImg" alt="artwork image" class="image" />
+    <h1>{{ book.name }}</h1>
+    <h3>Author: {{book.author}}</h3>
+    <h3>Price: {{book.price}}</h3>
+    <h3>Description: {{book.longDescription}}</h3>
+</div>

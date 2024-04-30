@@ -33,11 +33,34 @@ jwt.issuer=eCommerce
 jwt.expiryInSeconds=604800
 ```
 
+## Prerequisites
+
+* `npm install -g @angular/cli` : https://angular.io/guide/setup-local#install-the-angular-cli
+* `brew install node` : https://formulae.brew.sh/formula/node
+* `brew install maven`: https://formulae.brew.sh/formula/maven
+* Spring docs for reference: https://www.baeldung.com/spring-boot
+
+There might be some others too but if so, just update this list
+
 ## Run Application
 
-To run our application, `cd` into `bookblend-backend`, and run the following command:
+### Start the Backend Server
+
+To run the backend server, `cd` into `bookblend-backend`, and run the following command:
 
 `./mvnw spring-boot:run`
+
+### Start the Frontend Server
+
+To run the frontend server, `cd` into `bookblend-frontend`.
+
+You will probably need to install dependencies for project first :
+
+`npm install`
+
+To start the Angular server run the following command:
+
+`./ng serve`
 
 ## Connecting to Our Database via CLI
 
@@ -75,15 +98,14 @@ If you successfully conncected to the DB and run the script from your local mach
 
 ![alt text](Images/setup_db.png)
 
-## MISC
+## Info About Project
 
-* Added Spring boot security to our app
+* Tutorial we referenced for setting up the backend (didn't go further than episode 8): https://www.youtube.com/playlist?list=PLtBt-olBU9cTm-5SdTy3mjaSEnHglK-Mz
+* Doc we referenced on how to connect the backend to the frontend : https://www.baeldung.com/spring-boot-angular-web 
+Added Spring boot security to our app
 * Temporarily put an endpoint for users to login and receive a JWT
 * Have endpoint for all of the products available
 * Have endpoint for all of the orders for the  user signed in
-
-8:
+* Have endpoint to see all users in system
 * Make all endpoints secured by authentication by default: we check to see if auth principal provided already, if not we will reject with 401 unauthorized
 * Put exclusions to requiring authentication on specific endpoints
-
-* Added initial code , test controller, exposed the mappings actuator functionality inside spring boot following this tutorial: https://www.youtube.com/watch?v=S7nVCB1Fqvk&list=PLtBt-olBU9cTm-5SdTy3mjaSEnHglK-Mz 
