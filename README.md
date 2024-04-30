@@ -50,6 +50,10 @@ To run the backend server, `cd` into `bookblend-backend`, and run the following 
 
 `./mvnw spring-boot:run`
 
+To view our `books` table, you can see that at:
+
+`http://localhost:8080/book`
+
 ### Start the Frontend Server
 
 To run the frontend server, `cd` into `bookblend-frontend`.
@@ -61,6 +65,10 @@ You will probably need to install dependencies for project first :
 To start the Angular server run the following command:
 
 `./ng serve`
+
+The frontend site is hosted at :
+
+`http://localhost:4200/`
 
 ## Connecting to Our Database via CLI
 
