@@ -9,18 +9,24 @@ import { Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { HomeComponentComponent } from './components/home-component/home-component.component';
+import { BookListComponent } from './components/book-list/book-list.component';
+import { AboutUsPageComponent } from './components/about-us-page/about-us-page.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponentComponent },
-  { path: 'users', component: UserListComponent }
+  { path: 'users', component: UserListComponent },
+  { path: 'books', component: BookListComponent },
+  { path: 'about', component: AboutUsPageComponent }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    HomeComponentComponent
+    HomeComponentComponent,
+    BookListComponent,
+    AboutUsPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,111 @@
+// TOP HEADER SECTION OF PAGE
+
+.art {
+    background-image: url("../../../assets/bookblend_wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .art img {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+  }
+  
+  .art-content {
+    text-align: center;
+    color: white;
+  }
+  
+  .art-content h1 {
+    font-size: 100px;
+  }
+  
+  .art-content button {
+    padding: 12px 24px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  // MIDDLE OF PAGE
+  
+  .featured {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+ .container div {
+    padding: 10px;
+  }
+
+.book {
+    width: 450px;
+    height: 650px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.book img {
+    width: 300px;
+    height: 450px;
+}
+  
+  // BOTTOM OF PAGE
+  
+  .rectangle {
+    width: 100%;
+    height: 350px;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  .newsletter-button {
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 30px 60px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 150px;
+    cursor: pointer;
+  }
+  
+  .contact-link {
+  
+    color: black;
+    text-decoration: underline;
+    margin-top: 85px;
+  }
+
+  //book info section
+
+
+  

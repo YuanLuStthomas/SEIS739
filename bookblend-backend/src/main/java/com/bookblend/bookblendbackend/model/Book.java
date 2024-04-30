@@ -27,6 +27,14 @@ public class Book {
     @Column(name = "name", nullable = false, unique = true)
     private String name;
 
+    /** The name of the book. */
+    @Column(name = "author", nullable = false)
+    private String author;
+
+    /** The name of the book. */
+    @Column(name = "book_img", nullable = false)
+    private String bookImg;
+
     /** The short description of the book. */
     @Column(name = "short_description", nullable = false)
     private String shortDescription;
@@ -121,6 +129,38 @@ public class Book {
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+    /**
+     * Gets the author of the book.
+     * @return The author.
+     */
+    public String getAuthor() {
+        return author;
+    }
+
+    /**
+     * Sets the author of the book.
+     * @param author The author.
+     */
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    /**
+     * Gets the book_img of the book.
+     * @return The bookImg.
+     */
+    public String getBookImg() {
+        return bookImg;
+    }
+
+    /**
+     * Sets the book_img of the book.
+     * @param bookImg The book_img.
+     */
+    public void setBookImg(String bookImg) {
+        this.bookImg = bookImg;
     }
 
     /**

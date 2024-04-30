@@ -18,11 +18,11 @@ DELETE FROM inventory;
 DELETE FROM book;
 DELETE FROM address;
 
-INSERT INTO book (`name`, short_description, long_description, price) VALUES ('Pride and Prejudice', 'Book one short description.', 'This is a very long description of Pride and Prejudice.', 25.50);
-INSERT INTO book (`name`, short_description, long_description, price) VALUES ('The Great Gatsby', 'Book two short description.', 'This is a very long description of The Great Gatsby.', 21.56);
-INSERT INTO book (`name`, short_description, long_description, price) VALUES ('The Lord of the Rings', 'Book three short description.', 'This is a very long description of The Lord of the Rings.', 23.74);
-INSERT INTO book (`name`, short_description, long_description, price) VALUES ('Lolita', 'Book four short description.', 'This is a very long description of Lolita.', 15.69);
-INSERT INTO book (`name`, short_description, long_description, price) VALUES ('To Kill a Mockingbird', 'Book five short description.', 'This is a very long description of To Kill a Mockingbird.', 22.59);
+INSERT INTO book (`name`, author, bookImg, short_description, long_description, price) VALUES ('Pride and Prejudice', 'Jane Austen', 'assets/pride-and-prejudice.webp', 'Book one short description.', 'This is a very long description of Pride and Prejudice.', 25.50);
+INSERT INTO book (`name`, author, bookImg, short_description, long_description, price) VALUES ('The Great Gatsby', 'F. Scott Fitzgerald', 'assets/the-great-gatsby.jpg', 'Book two short description.', 'This is a very long description of The Great Gatsby.', 21.56);
+INSERT INTO book (`name`, author, bookImg, short_description, long_description, price) VALUES ('The Lord of the Rings', 'John Ronald Reuel Tolkien', 'assets/the-lord-of-the-rings.gif', 'Book three short description.', 'This is a very long description of The Lord of the Rings.', 23.74);
+INSERT INTO book (`name`, author, bookImg, short_description, long_description, price) VALUES ('The Lion, the Witch and the Wardrobe', 'C.S. Lewis', 'assets/LWW.jpg', 'Book four short description.', 'This is a very long description of Lolita.', 15.69);
+INSERT INTO book (`name`, author, bookImg, short_description, long_description, price) VALUES ('To Kill a Mockingbird', 'Harper Lee', 'assets/TCMB.jpg', 'Book five short description.', 'This is a very long description of To Kill a Mockingbird.', 22.59);
 
 -- DECLARE @book1 INT, @book2 INT, @book3 INT, @book4 INT, @book5 AS INT;
 SET @book1 = NULL;
@@ -34,7 +34,7 @@ SET @book5 = NULL;
 SELECT id INTO @book1 FROM book WHERE `name` = 'Pride and Prejudice';
 SELECT id INTO @book2 FROM book WHERE `name` = 'The Great Gatsby';
 SELECT id INTO @book3 FROM book WHERE `name` = 'The Lord of the Rings';
-SELECT id INTO @book4 FROM book WHERE `name` = 'Lolita';
+SELECT id INTO @book4 FROM book WHERE `name` = 'The Lion, the Witch and the Wardrobe';
 SELECT id INTO @book5 FROM book WHERE `name` = 'To Kill a Mockingbird';
 
 INSERT INTO inventory (book_id, quantity) VALUES (@book1, 5);

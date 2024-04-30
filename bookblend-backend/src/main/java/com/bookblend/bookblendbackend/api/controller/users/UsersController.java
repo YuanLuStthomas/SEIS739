@@ -4,6 +4,8 @@ package com.bookblend.bookblendbackend.api.controller.users;
 
 import com.bookblend.bookblendbackend.model.LocalUser;
 import com.bookblend.bookblendbackend.service.ListUsersService;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +17,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/users")
+@CrossOrigin(origins = "http://localhost:4200")
 public class UsersController {
 
     /** The Book Service. */
@@ -33,7 +36,7 @@ public class UsersController {
      * @return The list of books.
      */
     @GetMapping
-    public List<LocalUser> getBooks() {
+    public List<LocalUser> getUsers() {
         return listUsersService.getUsers();
     }
 

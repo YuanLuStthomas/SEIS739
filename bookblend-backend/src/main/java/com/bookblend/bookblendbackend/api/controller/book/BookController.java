@@ -2,6 +2,8 @@ package com.bookblend.bookblendbackend.api.controller.book;
 
 import com.bookblend.bookblendbackend.model.Book;
 import com.bookblend.bookblendbackend.service.BookService;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +15,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/book")
+@CrossOrigin(origins = "http://localhost:4200")
 public class BookController {
 
     /** The Book Service. */

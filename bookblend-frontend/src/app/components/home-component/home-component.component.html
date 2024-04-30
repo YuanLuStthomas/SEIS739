@@ -1,1 +1,33 @@
-<p>home-component works!</p>
+<section class="art">
+    <img class="icon" src="favicon.ico" alt="Icon">
+    <div class="art-content">
+        <h1>BOOKBLEND</h1>
+        <button routerLink="/books">Explore</button>
+    </div>
+</section>
+
+<h1 class="featured">Featured Books</h1>
+
+<div class="container">
+    <div class="book">
+        <h2>{{ books[0].name }}</h2>
+        <h2>{{ books[0].author }}</h2>
+        <img [src]="books[0].bookImg" alt="Book Art"/>
+    </div>
+    <div class="book">
+        <h2>{{ books[1].name }}</h2>
+        <h2>{{ books[1].author }}</h2>
+        <img [src]="books[1].bookImg" alt="Book Art"/>
+    </div>
+    <div class="book">
+        <h2>{{ books[2].name }}</h2>
+        <h2>{{ books[2].author }}</h2>
+        <img [src]="books[2].bookImg" alt="Book Art"/>
+    </div>
+</div>
+
+
+<div class="rectangle">
+    <button routerLink="/about" class="newsletter-button">Newsletter Signup</button>
+    <a routerLink="/about" class="contact-link">Contact Us</a>
+</div>
