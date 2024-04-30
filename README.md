@@ -38,6 +38,7 @@ jwt.expiryInSeconds=604800
 * `npm install -g @angular/cli` : https://angular.io/guide/setup-local#install-the-angular-cli
 * `brew install node` : https://formulae.brew.sh/formula/node
 * `brew install maven`: https://formulae.brew.sh/formula/maven
+* Assuming you already have `java` installed
 * Spring docs for reference: https://www.baeldung.com/spring-boot
 
 There might be some others too but if so, just update this list
@@ -50,13 +51,15 @@ To run the backend server, `cd` into `bookblend-backend`, and run the following 
 
 `./mvnw spring-boot:run`
 
+.. Keep this running while you are testing / view the app
+
 To view our `books` table, you can see that at:
 
 `http://localhost:8080/book`
 
 ### Start the Frontend Server
 
-To run the frontend server, `cd` into `bookblend-frontend`.
+To run the frontend server, open a new terminal `cd` into `bookblend-frontend`.
 
 You will probably need to install dependencies for project first :
 
@@ -65,6 +68,8 @@ You will probably need to install dependencies for project first :
 To start the Angular server run the following command:
 
 `./ng serve`
+
+.. Keep this running while you are testing / view the app
 
 The frontend site is hosted at :
 
