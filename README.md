@@ -82,4 +82,8 @@ If you successfully conncected to the DB and run the script from your local mach
 * Have endpoint for all of the products available
 * Have endpoint for all of the orders for the  user signed in
 
+8:
+* Make all endpoints secured by authentication by default: we check to see if auth principal provided already, if not we will reject with 401 unauthorized
+* Put exclusions to requiring authentication on specific endpoints
+
 * Added initial code , test controller, exposed the mappings actuator functionality inside spring boot following this tutorial: https://www.youtube.com/watch?v=S7nVCB1Fqvk&list=PLtBt-olBU9cTm-5SdTy3mjaSEnHglK-Mz 

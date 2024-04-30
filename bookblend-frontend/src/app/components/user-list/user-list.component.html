@@ -1,0 +1,13 @@
+<p>user-list works!</p>
+
+<div>{{ users[0].firstName }}</div>
+
+<div>users</div>
+
+<div>test</div>
+
+<div *ngFor="let user of users">
+    <p>{{ user.id }}</p>
+    <p>{{ user.username }}</p>
+    <p><a href="mailto:{{ user.email }}">{{ user.email }}</a></p>
+</div>

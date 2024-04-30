@@ -8,31 +8,31 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * Controller to handle the creation, updating & viewing of Books.
+ */
+@RestController
+@RequestMapping("/book")
+public class BookController {
+
+    /** The Book Service. */
+    private BookService bookService;
+
     /**
-     * Controller to handle the creation, updating & viewing of Books.
+     * Constructor for spring injection.
+     * @param bookService
      */
-    @RestController
-    @RequestMapping("/book")
-    public class BookController {
+    public BookController(BookService bookService) {
+        this.bookService = bookService;
+    }
 
-        /** The Book Service. */
-        private BookService bookService;
-
-        /**
-         * Constructor for spring injection.
-         * @param bookService
-         */
-        public BookController(BookService bookService) {
-            this.bookService = bookService;
-        }
-
-        /**
-         * Gets the list of books available.
-         * @return The list of books.
-         */
-        @GetMapping
-        public List<Book> getBooks() {
-            return bookService.getBooks();
-        }
+    /**
+     * Gets the list of books available.
+     * @return The list of books.
+     */
+    @GetMapping
+    public List<Book> getBooks() {
+        return bookService.getBooks();
+    }
 
 }
