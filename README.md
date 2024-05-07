@@ -1,5 +1,7 @@
 # SEIS739
 
+Repository : https://github.com/YuanLuStthomas/SEIS739
+
 ## Full-stack application project
 
 Website will have users who can buy an array or products in different quantities. It will hold the inventory of stock and allow users to make orders to ship to their address.
